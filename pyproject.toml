@@ -1,0 +1,10 @@
+[project]
+name = "offline-rl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "obp>=0.5.2",
+    "matplotlib<3.9"
+]
