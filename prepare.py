@@ -23,7 +23,7 @@ def irt_proba(theta, diff):
 
 def get_data(DATA):
     if DATA == 'robo':
-        df = pd.read_csv('data/robomission-attempts.csv')
+        df = pd.read_csv('data/attempts.csv')
         df['outcome'] = df['solved'].astype(int)
         df['user'] = np.unique(df['student'], return_inverse=True)[1]
         df['unordered_item'] = np.unique(df['problem'], return_inverse=True)[1]
